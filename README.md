@@ -14,7 +14,7 @@ b := NewFMSBuilder()
 
 ## Define States and Events:
 ```go
-b.AddStates(State{Initial: "SS", End: "SE", Intermedite: []string{"S1","S2","S3"}})
+b.AddStates(State{Initial: "SS", End: "SE", Intermedite: []string{"S1","S2"}})
 	b.AddEvents(Events{
 		{Source: "SS", Target: "S1", Name: "E1", Action: func(e *Event) {}},
 		{Source: "S1", Target: "S2", Name: "E2", Action: func(e *Event) {}},
