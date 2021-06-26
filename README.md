@@ -28,3 +28,6 @@ b.AddStates(State{Initial: "SS", End: "SE", Intermedite: []string{"S1","S2"}})
 fms.SendEvent("E1")
 fmt.Println(">> ", fms.GetState())
 ```
+
+## License
+[CJ](https://github.com/chandrasekar-om)
